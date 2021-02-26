@@ -115,7 +115,6 @@ def on_release(key):
         exitFlag=1
         print(exitFlag)
         return False
-
 # Collect events until released
 with keyboard.Listener(
         on_press=on_press,
