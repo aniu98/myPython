@@ -98,7 +98,6 @@ def runJob(threadName, delay, counter):
             # engine.say('休息结束了')
             # engine.runAndWait()
         # time.sleep(20)
-
 thread1 = myThread(1, "Thread-1", 0.08)
 thread1.start()
 def on_press(key):
