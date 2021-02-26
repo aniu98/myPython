@@ -6,7 +6,6 @@ import time
 import threading
 
 exitFlag = 0
-
 # engine = pyttsx3.init()
 class myThread (threading.Thread):
     def __init__(self, threadID, name, counter):
