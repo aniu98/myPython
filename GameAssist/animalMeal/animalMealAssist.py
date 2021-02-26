@@ -16,10 +16,10 @@ class animalMealAssist(object):
 		super(animalMealAssist, self).__init__()
 		self.wdName = wdName
 		# 获得窗口句柄
-		self.hwnd=win32gui.FindWindow(0, wdname);
+		self.hwnd=win32gui.FindWindow(0, wdname)
 		if not self.hwnd:
 			print("没有找到窗口,请确认窗口名称:【%s】"% wdname)
-			exit();
+			exit()
 		# 窗口显示在最前面
 		win32gui.SetForegroundWindow(self.hwnd)
 		self.position=win32gui.GetWindowRect(self.hwnd)
