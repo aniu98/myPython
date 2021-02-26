@@ -1,5 +1,5 @@
 # pip install pynput
-import pyttsx3
+# import pyttsx3
 from pynput.mouse import Button, Controller
 from pynput import keyboard
 import time
@@ -7,7 +7,7 @@ import threading
 
 exitFlag = 0
 
-engine = pyttsx3.init()
+# engine = pyttsx3.init()
 class myThread (threading.Thread):
     def __init__(self, threadID, name, counter):
         threading.Thread.__init__(self)
