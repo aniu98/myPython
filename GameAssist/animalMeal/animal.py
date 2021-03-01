@@ -18,9 +18,10 @@ class myThread (threading.Thread):
         runJob(self.name, self.counter, 5)
         print ("退出线程: " + self.name)
 def breakDo():
-    mouse = Controller()
+    pass
+    # mouse = Controller()
     # mouse.position=(262, 27)
-    mouse.click(Button.left, 1)
+    # mouse.click(Button.left, 1)
 def click(threadName,delay,x,y,num):
     mouse = Controller()
     mouse.position=(x, y)
@@ -80,8 +81,8 @@ def runJob(threadName, delay, counter):
         
 
         # 手机宣传
-        click(threadName,0.08,1873,760,31*15*2)
-        # click(threadName,0.03,289,572,32*5)
+        click(threadName,0.05,1873,760,30*15*3)
+        # click(threadName,0.03,289,572,32*5)\
         count=count+1
         print(count)
         # 在线1h
