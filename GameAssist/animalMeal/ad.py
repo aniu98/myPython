@@ -56,6 +56,7 @@ def on_press(key):
 
 def on_release(key):
     print('{0} released'.format(key))
+    global exitFlag
     if key == keyboard.Key.esc:
         # Stop listener
         exitFlag = True
