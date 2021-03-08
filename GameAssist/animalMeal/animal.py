@@ -27,6 +27,7 @@ def click(threadName,delay,x,y,num):
     mouse.position=(x, y)
     # print('The current pointezr position is {0} and time is {1}'.format( mouse.position, time.ctime(time.time())))
     for i in range(1,num):
+        i=i
         if exitFlag:
             breakDo()
             break
@@ -81,16 +82,16 @@ def runJob(threadName, delay, counter):
         
 
         # 手机宣传
-        click(threadName,0.05,1873,760,30*15*3)
+        click(threadName,0.08,1873,760,29*15)
         # click(threadName,0.03,289,572,32*5)\
         count=count+1
         print(count)
         # 在线1h
-        click(threadName,0.08,1692,558,2)
+        click(threadName,0.1,1692,558,2)
         # 领取
-        click(threadName,0.08,1800,565,2)
+        click(threadName,0.1,1800,565,2)
         # 教育孩子
-        click(threadName,0.08,1600,728,2)
+        click(threadName,0.1,1600,728,2)
         if count%60==0:
             # engine.say('我要开始休息5分钟了')
             print("{0} : start sleep 5min".format(time.ctime(time.time())))
@@ -99,7 +100,7 @@ def runJob(threadName, delay, counter):
             # engine.say('休息结束了')
             # engine.runAndWait()
         # time.sleep(20)
-thread1 = myThread(1, "Thread-1", 0.08)
+thread1 = myThread(1, "Thread-1", 0.1)
 thread1.start()
 def on_press(key):
     try:
