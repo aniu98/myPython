@@ -82,7 +82,7 @@ def runJob(threadName, delay, counter):
         
 
         # 手机宣传
-        click(threadName,0.08,1873,760,29*15)
+        click(threadName,0.08,1873,760,28*10)
         # click(threadName,0.03,289,572,32*5)\
         count=count+1
         print(count)
