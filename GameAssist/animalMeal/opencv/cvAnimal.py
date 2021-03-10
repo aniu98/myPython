@@ -4,6 +4,8 @@ import time
 import threading
 
 exitFlag = False
+fishFlag = True
+pressFlag =True
 
 def click(x, y, delay, num=2):
     mouse = Controller()
