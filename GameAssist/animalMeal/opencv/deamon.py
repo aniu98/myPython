@@ -7,8 +7,8 @@ import time
 
 class Job(threading.Thread):
 
-    def __init__(self, *args, **kwargs):
-        super(Job, self).__init__(*args, **kwargs)
+    def __init__(self):
+        super(Job, self).__init__()
         self.__flag = threading.Event()     # 用于暂停线程的标识
         self.__flag.set()       # 设置为True
         self.__running = threading.Event()      # 用于停止线程的标识
@@ -29,9 +29,12 @@ class Job(threading.Thread):
     def stop(self):
         self.__flag.set()       # 将线程从暂停状态恢复, 如何已经暂停的话
         self.__running.clear()        # 设置为False
+class aniu(Job):
+    def __init__(self):
+        super.__init__()
+        
 
-
-a = Job()
+a = aniu()
 a.start()
 time.sleep(3)
 a.pause()
