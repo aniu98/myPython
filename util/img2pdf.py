@@ -31,7 +31,7 @@ def rea(path, pdf_name):
     print("输出文件名称：", pdf_name)
 if __name__ == '__main__':
     pdf_name = 'gracexxxxx.pdf'
-    mypath = r"E:/workspace/grace/新建文件夹/kangjunru423-21-03-03-171630-9424/A4杂志册26P不覆膜_1853747924_"
+    mypath = r"E:/workspace/grace"
     if ".pdf" in pdf_name:
         rea(mypath, pdf_name=pdf_name)
     else:
