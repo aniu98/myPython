@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-
-from selenium import webdriver # 导入库
+# 导入库
+from selenium import webdriver
 import time
 # 声明浏览器
 browser = webdriver.Chrome()
@@ -10,7 +10,7 @@ url = 'https:www.baidu.com'
 browser.get(url)
 print("start sleep......")
 # 打印网页源代码
-time.sleep(10);
+time.sleep(10)
 print("start get page_source")
 data= browser.page_source
 print("start print")
