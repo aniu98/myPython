@@ -2,7 +2,7 @@
 import cv2
 import numpy as np
 
-import Image
+from PIL import Image
 
 
 img = cv2.imread("./img/girl1.jpg")
