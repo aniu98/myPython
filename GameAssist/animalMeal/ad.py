@@ -24,8 +24,8 @@ def main():
         # click(1666,696,2)
 
         # 调鱼
-        click(1690,153,2)
-        click(1770,453,2)
+        click(1690,153,4)
+        click(1770,453,4)
 
         # 宣传
         # if x == 0:
@@ -42,7 +42,7 @@ def main():
         # click(1629,558,2)
 
         # mute
-        click(1839, 77, 1)
+        click(1839, 77, 3)
         print("close ad after 30s %s" % time.ctime(time.time()))
         click(1882, 77, 35)
 
