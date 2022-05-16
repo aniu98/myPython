@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
  
+# 手势识别  
 def binaryMask(frame, x0, y0, width, height):
 	cv2.rectangle(frame,(x0,y0),(x0+width, y0+height),(0,255,0)) #画出截取的手势框图
 	roi = frame[y0:y0+height, x0:x0+width] #获取手势框图
