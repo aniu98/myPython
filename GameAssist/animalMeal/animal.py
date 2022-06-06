@@ -92,11 +92,17 @@ def runJob(threadName, delay, counter):
         click(threadName,0.1,1800,565,2)
         # 教育孩子
         click(threadName,0.1,1600,728,2)
-        if count%60==0:
+        if count%300==0:
             # engine.say('我要开始休息5分钟了')
+            click(threadName,2,1514,201,2)
+            click(threadName,2,1785,358,2)
             print("{0} : start sleep 5min".format(time.ctime(time.time())))
-            # time.sleep(8)
+            click(threadName,3,1873,760,2)
+            time.sleep(300)
             print("{0} : sleep 5min end ".format(time.ctime(time.time())))
+            click(threadName,2,1514,201,2)
+            click(threadName,2,1693,428,2)
+            time.sleep(5)
             # engine.say('休息结束了')
             # engine.runAndWait()
         # time.sleep(20)

@@ -24,7 +24,10 @@ def main():
         # click(1666,696,2)
 
         # 调鱼
-        click(1690,153,4)
+        # click(1690,153,4)
+        # click(1770,453,4)
+
+        # 邀请
         click(1770,453,4)
 
         # 宣传
@@ -42,9 +45,9 @@ def main():
         # click(1629,558,2)
 
         # mute
-        click(1839, 77, 3)
+        click(1839, 77, 2)
         print("close ad after 30s %s" % time.ctime(time.time()))
-        click(1882, 77, 35)
+        click(1882, 77, 34)
 
 
 def on_press(key):
