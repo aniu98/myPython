@@ -49,12 +49,12 @@ data_dic = {
 }
 
 print(data_dic)
-templateFileName="统一业务门户应用服务Vversion安装升级手册.docx"
+templateFileName="安装升级手册.docx"
 doc = DocxTemplate('./template/'+templateFileName) #加载模板文件
 doc.render(data_dic) #填充数据
 doc.save(destFilePath+templateFileName.replace('version',version)) #保存目标文件
 
-templateFileName='统一业务门户应用服务Vversion应用部署手册.docx'
+templateFileName='应用部署手册.docx'
 doc = DocxTemplate('./template/'+templateFileName) #加载模板文件
 doc.render(data_dic) #填充数据
 doc.save(destFilePath+templateFileName.replace('version',version)) #保存目标文件
