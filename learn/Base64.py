@@ -20,8 +20,7 @@ for fileName in fileNames:
 	print( "test")
 	
 for i in range(len(fileNames)):
-   print 'var :', fileNames[i]
-
+   print(fileNames[i]) 
 if False:
 	sFile = open("helloWord.py","rb").read()
 	encodeStr = base64.b64encode(sFile)
@@ -37,4 +36,4 @@ else :
 	jarFile = open("aniu.py","wb+")
 	jarFile.write(base64.b64decode(text))
 	jarFile.close()
-	print "success"
+	print("sucess")
