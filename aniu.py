@@ -9,17 +9,17 @@ import difflib
 
 version='1.0.5.0'
 lastVersion='1.0.4.0'
-author="牛亚宾"
-baseDir='/Project Team/piccGit/doc/3-20200630/3.7-系统验收/3.7.1-提测文档/'
+author="阿牛"
+baseDir='/提测文档/'
 
-destFilePath =baseDir+"统一业务门户前台应用-V"+version+"/"
+destFilePath =baseDir+"前台应用-V"+version+"/"
 if not(os.path.exists(destFilePath)):
     os.makedirs(destFilePath)
 applicationSrcYml="./template/application.yml"
 applicationDestYml=destFilePath+"application.yml"
 shutil.copy(applicationSrcYml, applicationDestYml)
 
-lastVersionYml=baseDir+"统一业务门户前台应用-V"+lastVersion+"/"+'application.yml'
+lastVersionYml=baseDir+"前台应用-V"+lastVersion+"/"+'application.yml'
 file1 = open(lastVersionYml,'r',encoding='UTF-8').readlines()
 file2 = open(applicationSrcYml,'r',encoding='UTF-8').readlines()
 # diff = difflib.ndiff(file1, file2)
