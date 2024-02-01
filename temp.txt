@@ -1,0 +1,46 @@
+cpuiowait使用率
+
+cpu 使用率： systerm  user idle  iowait
+
+系统平均负载 1mmin  5m 15m
+
+
+磁盘读写速率  读，写：dm-0， vda，vdb,vdc
+磁盘读写容量大小：读，写：dm-0， vda，vdb,vdc
+磁盘io读写时间
+
+文件系统inode使用率
+swap
+
+网络带宽 in out
+
+TCP  
+	CurrEstab - 当前状态为 ESTABLISHED 或 CLOSE-WAIT 的 TCP 连接数
+
+	ActiveOpens - 已从 CLOSED 状态直接转换到 SYN-SENT 状态的 TCP 平均连接数(1分钟内)
+
+	PassiveOpens - 已从 LISTEN 状态直接转换到 SYN-RCVD 状态的 TCP 平均连接数(1分钟内)
+
+	TCP_alloc - 已分配（已建立、已申请到sk_buff）的TCP套接字数量
+
+	TCP_inuse - 正在使用（正在侦听）的TCP套接字数量
+
+	TCP_tw - 等待关闭的TCP连接数
+
+
+
+
+
+
+
+
+	部门	日志类型	机房	最大日志量（一天）	热数据保留周期（期望）	冷数据保留周期（期望）
+
+
+
+
+
+1、已经完成采购流程
+2、四方退服项目，已完成
+3、运维保障小组职责已划分，目前故障出现与各团做好协同，待运维项目采购完成后形成运维值班制度
+4、目前缩容云主机740C1216G，容器472C892G，食堂待完成架构调整后缩容，现资源使用率达标仍比较困难，容器利用率方面收钱宝、商铺较低，仍需进一步缩容及扩展业务
