@@ -10,6 +10,7 @@ Author: Jan Bodnar
 Website: zetcode.com 
 Last edited: August 2017
 """
+# 俄罗斯广场
 
 from PyQt5.QtWidgets import QMainWindow, QFrame, QDesktopWidget, QApplication
 from PyQt5.QtCore import Qt, QBasicTimer, pyqtSignal
@@ -46,8 +47,8 @@ class Tetris(QMainWindow):
         
         screen = QDesktopWidget().screenGeometry()
         size = self.geometry()
-        self.move((screen.width()-size.width())/2, 
-            (screen.height()-size.height())/2)
+        self.move(int((screen.width()-size.width())/2), 
+            int((screen.height()-size.height())/2))
         
 
 class Board(QFrame):
