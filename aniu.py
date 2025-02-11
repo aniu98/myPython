@@ -4,7 +4,7 @@
 from docxtpl import DocxTemplate, RichText
 import shutil
 import os
-import sys
+# import sys
 import difflib
 
 version='1.0.5.0'
